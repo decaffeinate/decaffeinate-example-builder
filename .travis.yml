@@ -5,6 +5,11 @@ env:
   global:
     - CXX=g++-4.8
   matrix:
+    - PROJECT=atom
+    - PROJECT=autoprefixer
+    - PROJECT=codecombat
+    - PROJECT=coffeelint
+    - PROJECT=coffeescript
     - PROJECT=hubot
 before_install:
   - openssl aes-256-cbc -K $encrypted_ca0e70ee0db9_key -iv $encrypted_ca0e70ee0db9_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
