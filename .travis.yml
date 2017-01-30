@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "6"
+env:
+  global:
+    - CXX=g++-4.8
+  matrix:
+    - PROJECT=hubot
+before_install:
+  - git config --global user.name 'decaffeinate bot'
+  - git config --global user.email 'decaffeinatebot@gmail.com'
+  - npm install -g bulk-decaffeinate decaffeinate eslint jscodeshift
+  - git clone https://github.com/decaffeinate/decaffeinate-examples.git
+script:
+  - cd decaffeinate-examples
+  - npm install
+  - bin/example-runner ${PROJECT} --publish
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8

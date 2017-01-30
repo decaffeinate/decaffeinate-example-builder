@@ -1,0 +1,9 @@
+{
+  "name": "decaffeinate-example-builder",
+  "version": "1.0.0",
+  "description": "A build script to regularly build decaffeinate examples",
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "Alan Pierce",
+  "license": "MIT"
+}
