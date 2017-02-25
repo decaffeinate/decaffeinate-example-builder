@@ -27,6 +27,11 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     packages:
-    - g++-4.8
+    - build-essential
+    - clang-3.3
+    - fakeroot
+    - git
+    - libgnome-keyring-dev
+    - rpm
     - libx11-dev
     - libxkbfile-dev
