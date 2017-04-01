@@ -26,6 +26,7 @@ addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
+    - mongodb-upstart
     packages:
     - build-essential
     - g++-4.8
@@ -36,3 +37,4 @@ addons:
     - rpm
     - libx11-dev
     - libxkbfile-dev
+    - mongodb-org-server
