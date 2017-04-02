@@ -38,3 +38,4 @@ addons:
     - libx11-dev
     - libxkbfile-dev
     - mongodb-org-server
+  firefox: "52.0"
