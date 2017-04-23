@@ -6,6 +6,7 @@ env:
     - CXX=g++-4.8
   matrix:
     - PROJECT=atom
+    - PROJECT=atom-org
     - PROJECT=autoprefixer
     - PROJECT=chroma.js
     - PROJECT=codecombat
