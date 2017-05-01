@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - "6"
-dist: trusty
 env:
   global:
     - CXX=g++-4.8
@@ -37,6 +36,7 @@ addons:
     - clang-3.3
     - fakeroot
     - git
+    - libgnome-keyring-dev
     - libsecret-1-dev
     - rpm
     - libx11-dev
