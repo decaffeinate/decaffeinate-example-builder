@@ -37,7 +37,6 @@ addons:
     - fakeroot
     - git
     - libgnome-keyring-dev
-    - libsecret-1-dev
     - rpm
     - libx11-dev
     - libxkbfile-dev
