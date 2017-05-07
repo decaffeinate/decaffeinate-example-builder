@@ -4,16 +4,30 @@ node_js:
 env:
   global:
     - CXX=g++-4.8
-  matrix:
-    - PROJECT=atom
-    - PROJECT=atom-org
-    - PROJECT=autoprefixer
-    - PROJECT=chroma.js
-    - PROJECT=codecombat
-    - PROJECT=coffeelint
-    - PROJECT=coffeescript
-    - PROJECT=hubot
-    - PROJECT=vimium
+matrix:
+  include:
+    - env: PROJECT=atom
+      dist: trusty
+      sudo: required
+      addons:
+        apt:
+          packages:
+          - build-essential
+          - clang-3.3
+          - fakeroot
+          - git
+          - libsecret-1-dev
+          - rpm
+          - libx11-dev
+          - libxkbfile-dev
+    - env: PROJECT=atom-org
+    - env: PROJECT=autoprefixer
+    - env: PROJECT=chroma.js
+    - env: PROJECT=codecombat
+    - env: PROJECT=coffeelint
+    - env: PROJECT=coffeescript
+    - env: PROJECT=hubot
+    - env: PROJECT=vimium
 before_install:
   - openssl aes-256-cbc -K $encrypted_ca0e70ee0db9_key -iv $encrypted_ca0e70ee0db9_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
