@@ -33,6 +33,9 @@ matrix:
     - env: PROJECT=coffeescript
     - env: PROJECT=hubot
     - env: PROJECT=vimium
+  # Exclude the default build; we only want to run explicitly-included builds.
+  exclude:
+    node_js: "6"
 before_install:
   - openssl aes-256-cbc -K $encrypted_ca0e70ee0db9_key -iv $encrypted_ca0e70ee0db9_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
