@@ -2,7 +2,7 @@ language: node_js
 node_js: "6"
 matrix:
   include:
-    - env: PROJECT=atom
+    - env: PROJECT=atom NODE_VERSION=6.9.4 DISPLAY=:99.0 CC=clang CXX=clang++ npm_config_clang=1
       dist: trusty
       sudo: required
       addons:
