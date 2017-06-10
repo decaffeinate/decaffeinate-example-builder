@@ -2,14 +2,16 @@ language: node_js
 node_js: "6"
 matrix:
   include:
-    - env: PROJECT=atom NODE_VERSION=6.9.4 DISPLAY=:99.0 CC=clang CXX=clang++ npm_config_clang=1
+    - env: PROJECT=atom NODE_VERSION=6.9.4 DISPLAY=:99.0 CXX=g++-6 CC=gcc-6
       dist: trusty
       sudo: required
       addons:
         apt:
+          sources:
+          - ubuntu-toolchain-r-test
           packages:
-          - build-essential
-          - clang-3.3
+          - gcc-6
+          - g++-6
           - fakeroot
           - git
           - libsecret-1-dev
