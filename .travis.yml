@@ -22,6 +22,7 @@ matrix:
     - env: PROJECT=autoprefixer
     - env: PROJECT=chroma.js
     - env: PROJECT=codecombat CXX=g++-4.8
+      node_js: "5.1.1"
       addons:
         apt:
           sources:
