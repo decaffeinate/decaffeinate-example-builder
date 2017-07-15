@@ -3,6 +3,7 @@ node_js: "8"
 matrix:
   include:
     - env: PROJECT=atom NODE_VERSION=6.9.4 DISPLAY=:99.0 CXX=g++-6 CC=gcc-6
+      node_js: "6.9.4"
       dist: trusty
       sudo: required
       addons:
