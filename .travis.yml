@@ -27,12 +27,12 @@ matrix:
       addons:
         apt:
           sources:
-          - ubuntu-toolchain-r-test
           - mongodb-upstart
+          - ubuntu-toolchain-r-test
           packages:
           - mongodb-org-server
           - g++-4.8
-        firefox: "52.0"
+      dist: precise
     - env: PROJECT=coffeelint
     - env: PROJECT=coffeescript
     - env: PROJECT=hubot
