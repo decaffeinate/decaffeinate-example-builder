@@ -6,6 +6,11 @@ matrix:
       node_js: "6.9.4"
       dist: trusty
       sudo: required
+      cache:
+        directories:
+          - ~/.atom/compile-cache
+          - ~/.atom/snapshot-cache
+          - ~/.atom/.apm
       addons:
         apt:
           sources:
