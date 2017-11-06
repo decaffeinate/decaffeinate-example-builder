@@ -30,6 +30,7 @@ matrix:
     - env: PROJECT=codecombat CXX=g++-4.8
       node_js: "5.1.1"
       addons:
+        firefox: "55.0"
         apt:
           sources:
           - mongodb-upstart
