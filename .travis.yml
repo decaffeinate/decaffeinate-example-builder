@@ -11,6 +11,7 @@ matrix:
         - nvm install $NODE_VERSION
         - nvm use --delete-prefix $NODE_VERSION
         - npm install -g npm@5.3.0
+        - npm install -g bulk-decaffeinate decaffeinate eslint jscodeshift
       dist: trusty
       sudo: required
       cache:
