@@ -2,8 +2,15 @@ language: node_js
 node_js: "8"
 matrix:
   include:
-    - env: PROJECT=atom NODE_VERSION=6.9.4 DISPLAY=:99.0 CXX=g++-6 CC=gcc-6
-      node_js: "6.9.4"
+    - language: python
+      python: "2.7.13"
+      env: PROJECT=atom NODE_VERSION=6.9.4 DISPLAY=:99.0 CXX=g++-6 CC=gcc-6
+      install:
+        - git clone https://github.com/creationix/nvm.git /tmp/.nvm
+        - source /tmp/.nvm/nvm.sh
+        - nvm install $NODE_VERSION
+        - nvm use --delete-prefix $NODE_VERSION
+        - npm install -g npm@5.3.0
       dist: trusty
       sudo: required
       cache:
