@@ -36,6 +36,8 @@ matrix:
     - env: PROJECT=autoprefixer
     - env: PROJECT=chroma.js
     - env: PROJECT=codecombat CXX=g++-4.8
+      services:
+        - mongodb
       addons:
         firefox: "55.0"
         apt:
