@@ -50,6 +50,7 @@ matrix:
       dist: trusty
     - env: PROJECT=coffeelint
     - env: PROJECT=coffeescript
+    - env: PROJECT=coffeescript2
     - env: PROJECT=hubot
     - env: PROJECT=vimium
   # Exclude the default build; we only want to run explicitly-included builds.
